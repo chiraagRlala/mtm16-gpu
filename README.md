@@ -13,3 +13,13 @@ python -m ipykernel install --user --name theano-py3 --display-name "Python (py3
 mkdir -p ~/.ipython/kernels
 mv ~/.local/share/jupyter/kernels/theano-py3 ~/.ipython/kernels/theano-py3
 ```
+
+## SGE
+
+Cancel Titan:
+
+```
+qsub -l h=!titan-gpu
+```
+
+or use 2 slots (somewhat complicated on SGE).
