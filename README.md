@@ -16,10 +16,9 @@ mv ~/.local/share/jupyter/kernels/theano-py3 ~/.ipython/kernels/theano-py3
 
 ## SGE
 
-Cancel Titan:
-
 ```
-qsub -l h=!titan-gpu
+qsub -N job_name -V -cwd -b y -j y "commnad; another_command"
 ```
 
-or use 2 slots (somewhat complicated on SGE).
+- for unbuffred output: `python -u`
+- to cancel Titan: `qsub -l h=!titan-gpu` or use 2 slots (somewhat complicated on SGE)
