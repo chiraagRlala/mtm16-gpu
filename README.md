@@ -34,3 +34,10 @@ pip install theano
 ```
 
 `THEANO_FLAGS='device=cuda'`
+
+## Example
+
+```
+cp -r /net/me/merkur3/MTM/mtm006/lab/mlpTut
+./mlp.py
+```
