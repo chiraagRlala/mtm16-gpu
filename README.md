@@ -16,6 +16,7 @@ Connect to random *solX* node with `cluster` command.
 qstat
 qstat -u '*' -q gpu.q
 qsub -N job_name -V -cwd -b y -j y "commnad; another_command"
+qdel
 ```
 
 - `-V` exports environment variables to the qsub job
