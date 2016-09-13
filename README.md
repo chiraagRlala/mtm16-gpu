@@ -38,6 +38,7 @@ pip install theano
 ## Example
 
 ```
-cp -r /net/me/merkur3/MTM/mtm006/lab/mlpTut
+cp -r /net/me/merkur3/MTM/mtm006/lab .
+cd lab/mlpTut
 ./mlp.py
 ```
