@@ -4,10 +4,11 @@
 
 Connect to one of following with your *mtm* account:
 
-`ssh freki.ufal.ms.mff.cuni.cz`
-`ssh geri.ufal.ms.mff.cuni.cz`
-`ssh ufallab.ms.mff.cuni.cz`
-
+```
+ssh freki.ufal.ms.mff.cuni.cz
+ssh geri.ufal.ms.mff.cuni.cz
+ssh ufallab.ms.mff.cuni.cz
+```
 
 ```
 qstat
