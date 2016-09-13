@@ -10,12 +10,15 @@ ssh geri.ufal.ms.mff.cuni.cz
 ssh ufallab.ms.mff.cuni.cz
 ```
 
+Connect to random *solX* node with `cluster` command.
+
 ```
 qstat
 qstat -u '*' -q gpu.q
 qsub -N job_name -V -cwd -b y -j y "commnad; another_command"
 ```
 
+- `-V` exports environment variables to the qsub job
 - for unbuffred output: `python -u`
 - to cancel Titan: `qsub -l h=!titan-gpu` or use 2 slots (somewhat complicated on SGE)
 
