@@ -21,7 +21,7 @@ qdel
 
 - `-V` exports environment variables to the qsub job
 - for unbuffred output: `python -u`
-- to cancel Titan: `qsub -l h=!titan-gpu` or use 2 slots (somewhat complicated on SGE)
+- to exclude Titan: `qsub -l h=!titan-gpu` or use 2 slots (somewhat complicated on SGE)
 
 ## Theano
 
@@ -32,3 +32,5 @@ virtualenv venv --system-site-packages
 . venv/bin/activate
 pip install theano
 ```
+
+`THEANO_FLAGS='device=cuda'`
